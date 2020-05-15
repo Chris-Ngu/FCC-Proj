@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+
+
+<body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header>
+        <h1 id="title">Student Body Survey</h1>
+        <p id="description">Thank you for your feedback! </p>
+    </header>
+
+    <hr style="width: 50%";/>
+    <br />
+
+    <form id="survey-form">
+        <div id="name-area">
+            <label id="name-label">Name</label>
+            <br />
+            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+        </div>
+        <br />
+
+        <div id="email-area">
+            <label id="email-label">E-mail</label>
+            <br />
+            <input type="email" id="email" class="form-control" placeholder="example@example.com" required>
+        </div>
+        <br />
+
+        <div id="gender-area">
+            <label id="gender-label">What is your gender?</label>
+            <br />
+            <input type="radio" id="gender" name="gender" value="male">Male
+            <input type="radio" id="gender" name="gender" value="female">Female
+            <input type="radio" id="gender" name="gender" value="undisclosed">N/A
+        </div>
+        <br />
+
+        <div id="age-area">
+            <label id="number-label">Age</label>
+            <input type="number" id="number" class="form-control" placeholder="0" min="0" max="99">
+        </div>
+        <br />
+
+        <div id="dropdown-area">
+            <p id="dropdown-description">PLACEHOLDER</p>
+            <select id="dropdown">
+                <option value="pleaceholder1">placeholder1</option>
+                <option value="placeholder2">placeholder2</option>
+                <option value="placeholder3">placeholder3</option>
+            </select>
+        </div>
+        <br />
+
+        <div id="grades-option-area">
+            <p id="grades-description">Which have you completed? (Several may apply)</p>
+            <input type="checkbox" value="primary" class="input-checkbox">Primary School
+            <input type="checkbox" value="associate" class="input-checkbox">Associate's Degree
+            <br />
+            <input type="checkbox" value="bachelor" class="input-checkbox">Bachelor's Degree
+            <input type="checkbox" value="master" class="input-checkbox">Master's Degree
+            <br />
+            <input type="checkbox" value="doctoral" class="input-checkbox">Doctoral Degree
+        </div>
+
+        <div id="comments-area">
+            <p>Any additional comments?</p>
+            <textarea id="comments" rows="10" cols="40"></textarea>
+        </div>
+        <br />
+
+        <button type="submit" id="submit">Submit!</button>
+    </form>
+    <br />
+    <hr style="width: 50%" />
+
+</body>
+
+<footer>
+    <p>Created by:
+        <a href="github.com/chris-ngu" target="_blank">
+            Github.com/Chris-Ngu
+        </a>
+        <br />
+        :)
+    </p>
+</footer>
+
+</html>
