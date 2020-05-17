@@ -1,5 +1,4 @@
-/*Navbar/ body */
-
+/* Navbar/ body */
 body {
     --background-color: gray;
     background-color: gray;
@@ -39,12 +38,12 @@ body {
 }
 */
 
-/*Body not including navbar */
+/* Features */
 
 #demo {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 170px;
+    margin-top: 100px;
     text-align: center;
 }
 #demo h1 {
@@ -55,4 +54,75 @@ body {
 #features {
     text-align: center;
     padding-top: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+@media (max-width: 1920px) {
+    #features {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #pricing {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+#feature-grid {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#block {
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Pricing */
+
+#pricing {
+    text-align: center;
+    padding-top: 25px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#pricing-grid {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#block2 {
+    background-color: rgb(242, 242, 242);
+    border-radius: 15px;
+}
+
+/* email form */
+
+#form-section {
+    text-align: center;
+    margin-top: 40px;
+}
+#email {
+    border-radius: 7px;
+    width: 300px;
+    height: 17px;
+    text-align: center;
+}
+#submit {
+    border-radius: 50px;
+}
+#submit:hover {
+    background-color: black;
+    color: white;
+}
+#submit:focus {
+    background-color: yellow;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 30px;
+    text-align: center;
 }

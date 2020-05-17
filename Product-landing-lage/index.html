@@ -4,6 +4,7 @@
     Features
     Pricing
     Email form
+    footer credits
 -->
 
 <!DOCTYPE html>
@@ -20,38 +21,85 @@
         <img id="header-img" src="src/server.png" alt="COMPANY LOGO PLACEHOLDER" />
         <nav id="nav-bar">
             <div class="topnav">
-                <a href="#demo">Video Demo</a>
-                <a href="#features">Features</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#subscription">Email</a>
+                <a class="nav-link" href="#demo">Video Demo</a>
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
+                <a class="nav-link" href="#form-section">Email</a>
+                <a class="nav-link" href="#footer">Credits</a>
             </div>
         </nav>
     </header>
 
     <section id="demo">
         <h1>LNG&D, the definitive experience</h1>
-        <hr style="width: 70%";/> <br />
+        <hr style="width: 70%" ; /> <br />
 
-        <iframe id="video" src="http://youtube.com/embed/2PEt5RdNHNw" allowfullscreen height="576" width="1024"></iframe>
+        <iframe id="video" src="http://youtube.com/embed/2PEt5RdNHNw" allowfullscreen height="576"
+            width="1024" style="border-radius: 20px;"></iframe>
     </section>
 
     <section id="features">
         <h2>Features</h2>
-        <div class="grid">
-            
+        <div id="feature-grid">
+            <div id="block">
+                <img src="#" alt="grid placeholder">
+                <h3 style="font-style: italic;">Easy to understand</h3>
+                <p>We understand that a game of this caliber is quite complicated and hard to get into. Have no fear, we have simplified the version of Dungeons and Dragons that everyone loves and implimented our own twist. This way, everyone can join in on the fun without having to read an encyclopedia about the rules and lore! </p>
+            </div>
+            <div id="block">
+                <img src="#" alt="grid placeholder">
+                <h3 style="font-style: italic;">Digital + Physical Copies</h3>
+                <p>With every purchase of the game, we will include a digital version as well as a physical copy. The game is more portable than ever, anyone can play no matter what platform you choose. And the best part about this: you don't have to worry about licensing. Buy it once and own it forever, say goodbye to DRM! </p>
+            </div>
+            <div id="block">
+                <img src="#" alt="grid placeholder">
+                <h3 style="font-style: italic;">Open-Source Nature</h3>
+                <p>Have you ever wanted to improve a product that because some feature was missing or a feature wasn't to your liking? Have no fear, you can contribute to this project in any way, shape, or form. Sign up for our newsletter to find out when you can sign up for beta participation! </p>
+            </div>
         </div>
-
     </section>
-    <!--
-    <section id="email form">
-        <form id="form" action="#" method="POST">
-            <label id="email-label">Email</label>
+
+    <section id="pricing">
+        <h2>Pricing/ tiers</h2>
+        <div id="pricing-grid">
+            <div id="block2">
+                <b>$99 USD</b>
+                <p>Includes:</p>
+                <hr style="width: 10%" ; />
+                <p>OnlyFans Access</p>
+                <p>Discord Access</p>
+                <p>Supporter Emblem</p>
+            </div>
+            <div id="block2">
+                <b>$200 USD</b>
+                <p>Includes:</p>
+                <hr style="width: 10%;" />
+                <p>Priority Voting</p>
+                <p>Early Access to Builds</p>
+                <p>Donor Emblem</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-section">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <label id="email-label">Subscribe to our newsletter!</label>
             <br />
-            <input type="email" id="email-input" class="form-control" placeholder="email" required />
+            <input type="email" id="email" class="form-control" placeholder="email" required name="email" />
+            <br /><br />
+            <input type="submit" id="submit" value="signup" class="btn"></button>
         </form>
     </section>
-    -->
 
+    <footer id="footer">
+        <p>Created by:
+            <a href="https://github.com/chris-ngu" target="_blank">
+                Github.com/Chris-Ngu
+            </a>
+            <br />
+            :)
+        </p>
+    </footer>
 
 </body>
 
