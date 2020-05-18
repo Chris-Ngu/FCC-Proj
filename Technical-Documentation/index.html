@@ -1,3 +1,14 @@
+<!--
+    Add currently working features, planned additions, and bug report into either introduction/ it's own section
+    Clean up code (format the  bodies) and add styling to make look less 2000 lol
+    Add LNG logo or some image 
+    Expand each section/ add useful links
+
+    ---------------- To deploy this page, please make a copy and remove CODECAMP script ------------------
+
+    I finally got a mediaquery to work :)))))
+-->
+
 <!DOCTYPE html>
 <html>
 
@@ -16,9 +27,82 @@
             <li><a class="nav-link" href="#help">Help</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
             <li><a class="nav-link" href="#credits">Credits</a></li>
+            <li><a class="nav-link" href="#copyright">Copyright</a></li>
         </ul>
     </nav>
 
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header> <hr />
+            <p>GuestOfFail is a discord bot written primarily for LNG, but will be converted to open-distribution in the future. 
+                The bot was created to replace multiple bots and condense the bot lists being taken up in the server as well as writing 
+                our own code to perform tasks that no other bot was capable of. 
+            </p>
+            <p>For more information about the project, please refer to <a href="https://github.com/Jonahbui/guestoffail" target="_blank"><b>the github project repository</b></a></p>
+            <p>Currently being maintained by: 
+                <a href="https://github.com/chris-ngu" target="_blank">Chris Nguyen </a>
+                & 
+                <a href="https://github.com/Jonahbui" target="_blank">Jonah Bui</a>
+            </p>
+        </section>
+        <section class="main-section" id="commands">
+            <header>Commands</header> <hr />
+            <code>=ping </code>
+            <li>Check the server ping to the bot</li>
+            <code>=clear #</code>
+            <li>Clears a certain amount of messages (# = input, ROLE RESTRICTED: Garbage Man)</li>
+            <code>=contact</code>
+            <li>Shows the contact/ suggestion form for input + changes to the bot</li>
+            <code>=invite</code>
+            <li>Creates an invite link for the server, will send a message to the owner and in chat channel</li>
+            <code>=kick @MEMBER</code>
+            <li>Kicks a member from the discord server (@MEMBER = mention, ROLE RESTRICTED: Garbage Man)</li>
+            <code>=mute @MEMBER REASON</code>
+            <li>Mutes a member from a discord voice channel (@MEMBER = mention; REASON= sentence, ROLE RESTRICTED: Garbage Man)</li>
+        </section>
+        <section class="main-section" id="help">
+            <header>Help</header> <hr />
+            <code>=help</code>
+            <li>Displays the help function into the server with more information</li>
+            <code>=info</code>
+            <li>Displays the server information/ statistics</li>
+            <br />
+            <p>If you need any help with the documentation, configuration, or even setting up contact the contributing members in the introduction</p>
+        </section>
+        <section class="main-section" id="contact">
+            <header>Contact</header> <hr />
+            <p>Please contact the maintainers of the project (found in Introduction) thru Github and we will try to get back to you ASAP. 
+                Messaing options will be added here in the future. 
+                <br /> <br />
+                <b>Alternatively, you can contact us by submitting a suggestion form</b>
+            </p>
+        </section>
+        <section class="main-section" id="credits">
+            <header>Credits</header> <hr />
+            <p>Co-Creator: 
+                <a href="https://github.com/chris-ngu" target="_blank">Chris-Ngu</a><br />
+                Created Docs + Contributed to Bot creation
+            </p>
+            <p>Co-Creator: 
+                <a href="https://github.com/JonahBui" target="_blank">JonahBui</a><br />
+                Contributed to Bot creation
+            </p>
+            <p>Contribution works: 
+                <a href="https://github.com/JohnsonTran" target="_blank">JohnsonTran</a><br />
+                Code snippets used
+            </p>
+            <p><b>
+                And thank you to the Discord.py rewrite documentation provided:
+                <a href="https://discordpy.readthedocs.io/en/latest/" target="_blank">https://discordpy.readthedocs.io/en/latest/</a>
+                and all of the youtube tutorials :)
+            </b></p>
+        </section>
+        <section class="main-section" id="copyright">
+            <header>Copyright</header> <hr />
+            <p>All copyrights belong to their respective owner/ creators</p>
+            <p>Please contact any of the maintaining party members if there is a dispute, we are happy to work with you to resolve any issues</p>
+        </section>
+    </main>
 </body>
 
 </html>
