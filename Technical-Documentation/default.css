@@ -1,0 +1,42 @@
+/* Media query to fix the sidebar and page on right */
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+
+    border-right: solid;
+    border-color: gray;
+}
+header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    
+    margin-top: 20px;
+}
+/* height: # to cover the whole height */
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    height: 800px;
+}
+#navbar li {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+    text-align: center;
+    line-height: 80px;
+}
+#navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#navbar a:hover {
+    color: green;
+}
