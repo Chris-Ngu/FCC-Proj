@@ -1,6 +1,9 @@
 /* 
     play keyframe animation for coloring whenever hovering over anchor 
     media query to spred the project tabs when window is smaller/ larger
+
+    --=-- 
+    welcome section remove height and use margin-top padding-bottom
 */
 
 body {
@@ -32,10 +35,18 @@ body {
 
 /* Welcome */
 #welcome-section {
+    /*
     margin-top: 100px;
+    padding-bottom: 20px;
+    Delete height, margin-top and margin-bottom if not using height property
+    */
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: -300px;
+    
     color: white;
     text-align: center;
-    padding-bottom: 20px;
+    
 }
 #portrait {
     width: 500px;
@@ -64,6 +75,7 @@ body {
 }
 /*
     Maybe unrestrict the l+r margin on the body as well as changing the size of the cells 
+    change the sizes of the contact imgs
 */
 @media (max-width:1800px) {
     .project-tile img {
@@ -79,4 +91,22 @@ body {
     .project-tile img{
         width: 100px;
     }
+}
+
+/* Contact grid */
+#contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.contact-tile {
+    text-align: center;
+    color: white;
+}
+#github-logo {
+    width: 200px;
+}
+#linkedin-logo {
+    width: 200px;
 }
