@@ -1,9 +1,7 @@
 <!--
     Fix project tiles, Tiles aren't the same size
     Add one sentence description of each project
-    Keyframe animation for hovering over certain areas
-    Bio/ about me
-    Add email option in contact
+    fix overflow x
 -->
 
 <!DOCTYPE html>
@@ -30,15 +28,26 @@
             <img src="src/images/me.png" alt="Portrait" id="portrait">
             <h1>Christopher Nguyen</h1>
             <h3>Software/ full-stack developer</h3>
+            <hr style="width: 500px;" />
+            <br /> <br />
+            <div id="about-me">
+                <p>Welcome to my page!</p>
+                <p>I am currently a Junior university student who spends most of his time learning about interesting things in programming (which is almost everything).
+                    I have been programing ever since highschool; Java being my most proficient and first language. Below are my currently working projects posted on my github. These are solely individual, but I have some collaborated projects
+                     on my there as well. If you find that these projects are interesting and are open to collaboration or are reaching out to me because of a 
+                     job/ position, feel free to contact me on my Linkedin or shoot me an email. <br /> <br /> Thanks!<br/>:)
+                </p>
+            </div>
+
         </section>
-        <hr style="width: 80%;"/>
-        <br/> <br/>
+        <hr style="width: 80%;" />
 
         <section id="projects">
+            <h2>Projects</h2> <br />
             <div id="project-grid">
                 <div class="project-tile"">
                     <a href=" https://github.com/Chris-Ngu/EnterpriseSolution" target="_blank">
-                        <img src=" src/images/EnterpriseSolution.png" alt="ES">
+                    <img src=" src/images/EnterpriseSolution.png" alt="ES">
                     </a>
                     <h3 class="project-title">EnterpriseSolution</h3>
                     <p>C#</p>
@@ -65,12 +74,14 @@
                     <p>C++</p>
                 </div>
             </div>
+            <br /> <br />
             <a href="https://github.com/Chris-Ngu?tab=repositories" class="button">More Projects!</a> <br /> <br />
         </section>
-        <hr style="width: 80%;"/> 
-        <br /> <br />
+        <hr style="width: 80%;" />
 
         <section id="contact">
+            <h2>Contact Me!</h2>
+            <br />
             <div id="contact-grid">
                 <div class="contact-tile">
                     <a id="profile-link" href="https://github.com/Chris-Ngu" target="_blank">
@@ -84,9 +95,22 @@
                     </a>
                     <h3>Linkedin</h3>
                 </div>
+                <div class="contact-tile">
+                    <a id="profile-link" href="mailto: chris_ngu@pm.me">
+                        <img id="email-logo" src="src/images/blue-email-box-circle-png-transparent-icon-2.png"
+                            alt="email image">
+                    </a>
+                    <h3>E-mail</h3>
+                </div>
             </div>
         </section>
     </main>
 </body>
+<footer>
+    Created by Christopher Nguyen <br />
+    <a href="https://github.com/Chris-Ngu/Chris-Ngu.github.io" target="_blank">
+        <p>Github Repository</p>
+    </a>
+</footer>
 
 </html>

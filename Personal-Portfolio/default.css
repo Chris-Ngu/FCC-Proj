@@ -4,8 +4,22 @@
 */
 
 body {
-    background-color: rgb(58, 58, 58);
+    --background-color: rgb(58, 58, 58);
+    background-color: rgb(58,58,58);
     font-family: "Montserrat", sans-serif;
+
+    animation-name: my-move;
+    animation-duration: 3s;
+    animation-direction: forward;
+
+}
+@keyframes my-move { 
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 #navbar {
     position: fixed;
@@ -13,6 +27,7 @@ body {
     left: 0;
     width: 100%;
     background-color:gray; /*gradient here */
+    z-index: 999;
 
 }
 #navbar li {
@@ -39,10 +54,14 @@ body {
     */
     height: 100vh;
     margin-top: 100px;
-    margin-bottom: -300px;
     
     color: white;
     text-align: center;
+
+    animation-name: pop-in;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+
     
 }
 #portrait {
@@ -51,8 +70,28 @@ body {
     border-radius: 30px;
     border: 3px solid white;
 }
+#about-me {
+    margin-right: 300px;
+    margin-left: 300px;
+    border-radius: 30px;
+}
+@keyframes pop-in {
+    0% {
+        color: var(--background-color);
+        visibility: hidden;
+
+    }
+    100% {
+        color: white;
+    }
+}
 
 /* Projects section */
+#projects h2 {
+    color: white;
+    font-size: 30px;
+}
+
 #project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
@@ -67,6 +106,16 @@ body {
 }
 #projects {
     text-align: center;
+}
+.project-tile a img:hover {
+    position: relative;
+    top: -25px;
+    left -35px;
+    width: 500px;
+    height: auto;
+    display: block;
+    z-index: 998;
+    scale: 3;
 }
 .button {
     color: black;
@@ -92,6 +141,11 @@ body {
 }
 
 /* Contact grid */
+#contact h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
 #contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -108,4 +162,23 @@ body {
 #linkedin-logo {
     width: 150px;
     border-radius: 30px;
+}
+#email-logo {
+    width: 150px;
+}
+footer{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+
+    margin-top: 200px;
+    margin-left: 9%;
+    text-align: left;
+
+    text-decoration: none;
+}
+footer a p {
+    color: skyblue;
+}
+footer a p:hover {
+    color: white;
 }
