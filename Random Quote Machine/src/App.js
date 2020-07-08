@@ -9,7 +9,8 @@ export default class QuoteMachine extends React.Component {
 
     this.state = {
       quote: 'DEFAULT QUOTE',
-      author: 'DEFAULT AUTHOR'
+      author: 'DEFAULT AUTHOR',
+      URI: ''
     }
 
     this.freeCodeCampChecker = this.freeCodeCampChecker.bind(this);
@@ -41,21 +42,34 @@ export default class QuoteMachine extends React.Component {
 
         this.setState({
           quote: selectedQuote.quote,
-          author: selectedQuote.author
+          author: selectedQuote.author,
+          URI: "https://twitter.com/intent/tweet?text=" + encodeURIComponent('"' + selectedQuote + '" ' + this.state.author)
         });
+      })
+      .catch(() => {
+        console.log("data could not be fetched!");
       })
   }
   retweet = () => {
     let link = "https://twitter.com/intent/tweet?text=" + encodeURIComponent('"' + this.state.quote + '" ' + this.state.author);
+
+    return <Redirect to={link} />
   }
 
   render() {
     return (
-      <div id="quote-box">
-        <h1 id="text">{this.state.quote}</h1>
-        <p id="author">{this.state.author}</p>
-        <button id="new-quote" onClick={this.generateQuote} />
-        <a id='tweet-quote' onClick={this.retweet}>TWEET ICON HERE</a>
+      <div id="container">
+        <div id="quote-box">
+          <h1 id="text">{this.state.quote}</h1>
+          <p id="author">{this.state.author}</p>
+          <button id="new-quote" onClick={this.generateQuote}>
+            Press to generate another quote
+            </button>
+            <br/>
+          <a id='tweet-quote' href={this.state.URI}>
+            TWEET ICON HERE
+          </a>
+        </div>
       </div>
     );
   }

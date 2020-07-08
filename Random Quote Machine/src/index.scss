@@ -12,4 +12,20 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  
+
+  #quote-box {
+    border-radius: 10%;
+    width: 700x;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: greenyellow;
+
+    #text {
+
+    }
+
+  }
