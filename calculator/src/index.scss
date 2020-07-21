@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#program-container {
+position: absolute;
+left: 43%;
+top: 25%;
+  
+}
+// Calculator grid layout
+#calculator-container {
+  width: 300px;
+  height: 500px;
+
+  display: grid;
+  grid-template-areas: 
+  "total total total total"
+  "clear clear divide multiply"
+  "seven eight nine subtract"
+  "four five six plus"
+  "one two three equals"
+  "zero zero decimal equals"
+  ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  #display {
+    grid-area: total;
+    border: 1px solid black;
+  }
+  #clear {
+    grid-area: clear;
+    border: 1px solid black;
+  }
+  #divide {
+    grid-area: divide;
+    border: 1px solid black;
+  }
+  #multiply {
+    grid-area: multiply;
+    border: 1px solid black;
+  }
+  #seven {
+    grid-area: seven;
+    border: 1px solid black;
+  }
+  #eight {
+    grid-area: eight;
+    border: 1px solid black;
+  }
+  #nine {
+    grid-area: nine;
+    border: 1px solid black;
+  }
+  #subtract {
+    grid-area: subtract;
+    border: 1px solid black;
+  }
+  #four {
+    grid-area: four;
+    border: 1px solid black;
+  }
+  #five {
+    grid-area: five;
+    border: 1px solid black;
+  }
+  #six {
+    grid-area: six;
+    border: 1px solid black;
+  }
+  #plus {
+    grid-area: plus;
+    border: 1px solid black;
+  }
+  #one {
+    grid-area: one;
+    border: 1px solid black;
+  }
+  #two {
+    grid-area: two;
+    border: 1px solid black;
+  }
+  #three {
+    grid-area: three;
+    border: 1px solid black;
+  }
+  #equals {
+    grid-area: equals;
+    border: 1px solid black;
+  }
+  #zero {
+    grid-area: zero;
+    border: 1px solid black;
+  }
+  #decimal {
+    grid-area: decimal;
+    border: 1px solid black;
+  }
+  #equals {
+    grid-area: equals;
+    border: 1px solid black;
+  }
+}
